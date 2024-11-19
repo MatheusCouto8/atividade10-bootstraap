@@ -14,13 +14,11 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
 }
 
-.quadrado1, .quadrado2, .quadrado3 {
+.quadrado {
     width: 300px;
     height: 500px;
     background-color: rgb(231, 85, 0);
@@ -32,6 +30,13 @@ body {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quadrado:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icones {
